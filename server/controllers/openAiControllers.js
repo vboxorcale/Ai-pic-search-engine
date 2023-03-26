@@ -7,10 +7,12 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration)
 // Define a function that generates an image using the OpenAI API
 const genImage=async(req,res)=>{
+    const{prompt}= req.body;
+    console.log(prompt);
     try{
     // Make a request to the OpenAI API to generate an image based on a prompt
         const response = await openai.createImage({
-            prompt: "create a bus image",
+            prompt
         });
     // Extract the image result from the API response and send it back to the client
      const image_result = response.data.data
