@@ -1,6 +1,7 @@
 // Import the Express framework and create a new router instance
 const express = require('express');
 const { genImage } = require('../controllers/openAiControllers');
+// Create a new router instance with the Express framework
 const router = express.Router();
 
 // Define a route for the router that sends a "Hello World" response
