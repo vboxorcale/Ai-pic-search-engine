@@ -8,15 +8,21 @@ const Header = () => {
                  height="60"
                  alt="MDB Logo"
                  loading="lazy" />
-                 <p>Hello</p>
+                 <p>Hello Wellcome to my Ai Picture Engine</p>
         </a>
-        <div class="input-group">
-         <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-          <button type="button" class="btn btn-outline-primary">search</button>
-        </div>
+        
+      
         
       </div>
+
     </nav>
+    <form className="searchBar">
+      <div className="input-group" style={{ width: '800px', margin:"auto" }}>
+      <input type="search" className="form-control rounded" placeholder="Search Something" aria-label="Search" aria-describedby="search-addon" />
+       <button type="button" className="btn btn-outline-primary">search search search</button>
+     </div>
+
+      </form>
     </div>
   )
 }
