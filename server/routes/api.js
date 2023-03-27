@@ -5,7 +5,7 @@ const { genImage } = require('../controllers/openAiControllers');
 const router = express.Router();
 
 // Define a route for the router that sends a "Hello World" response
-router.get("/images", genImage);
+router.post("/images", genImage);
 
 // Export the router module for use in other parts of the application
 module.exports = router;
